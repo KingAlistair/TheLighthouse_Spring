@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" th:href="@{/css/mainMenu.css}" media="screen">
+</head>
+<body>
+<h1 class="mainLogo" th:text="${logo}"/>
+<nav class="navMenu">
+    <a href="#">New Game</a>
+    <a th:href="@{/players}">Load game</a>
+    <a href="#">Exit</a>
+    <div class="dot"></div>
+</nav>
+</body>
+</html>
