@@ -10,7 +10,7 @@ import java.net.URI;
 public class TheLighthouseApplication {
 
     public static void main(String[] args) {
-        openBrowser();
+     //   openBrowser();
         SpringApplication.run(TheLighthouseApplication.class, args);
     }
 
@@ -18,7 +18,7 @@ public class TheLighthouseApplication {
     public static void openBrowser() {
         try {
             Desktop d = Desktop.getDesktop();
-            d.browse(new URI("http://localhost:8095/"));
+            d.browse(new URI("http://localhost:8096/"));
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -3,6 +3,7 @@ package com.thelighthouse;
 public class Player {
 
     private String name;
+    private String background;
     private int health;
     private int sanity;
     private int strength;
@@ -17,8 +18,10 @@ public class Player {
 
     public Player() {
     }
-    public Player(String name, int health, int sanity, int strength, int endurance, int dexterity, int wisdom, int level, int saveSlot, int progress) {
+
+    public Player(String name, String background, int health, int sanity, int strength, int endurance, int dexterity, int wisdom, int level, int saveSlot, int progress) {
         this.name = name;
+        this.background = background;
         this.health = health;
         this.sanity = sanity;
         this.strength = strength;
@@ -36,6 +39,14 @@ public class Player {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getBackground() {
+        return background;
+    }
+
+    public void setBackground(String background) {
+        this.background = background;
     }
 
     public int getHealth() {

@@ -4,6 +4,7 @@
 .mainLogo {
     text-align: center;
     color: ghostwhite;
+    font-family: "Montserrat", sans-serif;
     margin: 50px;
 }
 
@@ -19,16 +20,14 @@ html {
 }
 
 body {
-    /*background: rgb(255,248,251);
-background: radial-gradient(circle, rgba(255,248,251,1) 0%, rgba(180,178,179,1) 15%, rgba(32,32,32,1) 100%);
-*/
     background: #272727;
+    background: linear-gradient(0deg, #272727 80%, rgba(51,51,51,1) 100%);
     font-family: "Montserrat", sans-serif;
 }
 
 .navMenu {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);

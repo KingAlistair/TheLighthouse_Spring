@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8">
+    <title>TheLightHouse</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" th:href="@{/css/style.css}" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+</head>
+
+<body class="customBody">
+<h2>New Game</h2>
+
+<table class="table table-dark">
+
+    <thead>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Background</th>
+        <th scope="col">Level</th>
+        <th scope="col">Chapter</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <th:block th:each="player : ${playerList}">
+        <tr>
+            <td>
+                <a class="customLink" th:href="@{/createCharacter}">Start</a>
+            </td>
+            <td>[[${player.name}]]</td>
+            <td>[[${player.background}]]</td>
+            <td>[[${player.level}]]</td>
+            <td>[[${player.progress}]]</td>
+        </tr>
+    </th:block>
+    </tbody>
+
+</table>
+
+<h2>
+<a class="customLink" th:href="@{/}">Main menu</a>
+</h2>
+
+</body>
+</html>

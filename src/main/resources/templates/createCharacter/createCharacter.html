@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TheLightHouse</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" th:href="@{/css/game.css}" media="screen">
+    <script type="text/javascript" th:src="@{/js/tutorial.js}"></script>
+</head>
+
+<h2 th:text="${text0}"></h2>
+
+<div id="text1" class="hidden">
+    <h2 th:text="${text1}"></h2>
+</div>
+
+<div id="text2" class="hidden">
+    <h2 th:text="${text2}"></h2>
+    <input class="center" type="text" id="name" name="username">
+</div>
+
+
+
+<div id="text3" class="hidden">
+    <h2 th:text="${text3}"></h2>
+</div>
+<div id="text4" class="hidden">
+    <h2 th:text="${text4}"></h2>
+</div>
+<div id="text5" class="hidden">
+    <h2 th:text="${text5}"></h2>
+</div>
+<div id="text6" class="hidden">
+    <h2 th:text="${text6}"></h2>
+</div>
+
+<button class="customText" id="button" value="1" onclick="incrementValue()">Next</button>
+
+</body>
+
+<script>
+    function incrementValue() {
+        var value = parseInt(document.getElementById('button').value, 10);
+
+        if (value === 1) {
+            var div = document.getElementById("text1");
+            div.classList.toggle('hidden');
+        } else if (value === 2) {
+            var div = document.getElementById("text2");
+            div.classList.toggle('hidden');
+        } else if (value === 3) {
+            var div = document.getElementById("text3");
+            div.classList.toggle('hidden');
+            var div = document.getElementById("text4");
+            div.classList.toggle('hidden');
+            var div = document.getElementById("text5");
+            div.classList.toggle('hidden');
+            var div = document.getElementById("text6");
+            div.classList.toggle('hidden');
+        } else if (value === 4) {
+
+        } else if (value === 5) {
+
+        } else if (value === 6) {
+        }
+        value++;
+        document.getElementById('button').value = value;
+    }
+
+</script>
+</html>
